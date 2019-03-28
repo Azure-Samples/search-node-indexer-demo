@@ -22,7 +22,7 @@ var deleteIndex = function(){
     };
         
     request.del(options, function(error, response, body){
-    	console.info("delete index result: " + response.statusCode);
+    	console.info("\n", "delete index result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -49,7 +49,7 @@ var deleteDataSource = function(){
     };
         
     request.del(options, function(error, response, body){
-    	console.info("delete datasource result: " + response.statusCode);
+    	console.info("\n", "delete datasource result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -78,7 +78,7 @@ var deleteIndexer = function(){
     };
         
     request.del(options, function(error, response, body){
-    	console.info("delete indexer result: " + response.statusCode);
+    	console.info("\n", "delete indexer result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -108,7 +108,7 @@ var createIndex = function(){
     };
         
     request.put(options, function(error, response, body){
-    	console.info("create index result: " + response.statusCode);
+    	console.info("\n", "create index result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -137,7 +137,7 @@ var createDataSource = function(){
     };
         
     request.put(options, function(error, response, body){
-    	console.info("create datasource result: " + response.statusCode);
+    	console.info("\n", "create datasource result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -166,7 +166,7 @@ var createIndexer = function(){
     };
         
     request.put(options, function(error, response, body){
-    	console.info("create indexer result: " + response.statusCode);
+    	console.info("\n", "create indexer result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
@@ -194,7 +194,7 @@ var runIndexer = function(){
     };
         
     request.post(options, function(error, response, body){
-    	console.info("run indexer result: " + response.statusCode);
+    	console.info("\n", "run indexer result:", response.statusCode, response.body);
     	deferred.resolve();
     });
 
